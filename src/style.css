@@ -21,9 +21,7 @@ body{
 
 header{
     grid-column: 1/4;
-    align-items: center;
     display: grid;
-    align-items: center;
     font-size: 3rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -33,6 +31,9 @@ header ul{
     list-style: none;
     display: flex;
     gap: 1rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
 
 header button{

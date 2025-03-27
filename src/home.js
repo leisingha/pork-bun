@@ -50,7 +50,8 @@ export const populateHomeContent = function(){
     sectionEnding.appendChild(pEnding);
 
     const button = document.createElement('button');
-    button.textContent = `Start Exploring`
+    button.textContent = `Start Exploring`;
+    
 
     content.appendChild(sectionIntro);
     content.appendChild(sectionMiddle);
