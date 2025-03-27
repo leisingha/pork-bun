@@ -1,13 +1,31 @@
 import imgImport from "./jokebear-monch.gif";
 
+function removeInverted(){
+    const btnList = document.querySelectorAll('ul button')
+    btnList.forEach((button) =>{
+        button.classList.remove('inverted');
+    })
+}
+
+function addInverted(btn){
+    btn.classList.add('inverted');
+}
+
+
 export const populateHomeContent = function(){
+
+    removeInverted();
+
+    const homeBtn = document.querySelector('.btn-home');
+    addInverted(homeBtn)
+
     const content = document.querySelector('#content');
     const sectionIntro = document.createElement('section');
     sectionIntro.classList.add('intro');
     const sectionMiddle = document.createElement('section');
-    sectionIntro.classList.add('middle');
+    sectionMiddle.classList.add('middle');
     const sectionEnding = document.createElement('section');
-    sectionIntro.classList.add('ending');
+    sectionEnding.classList.add('ending');
 
     const h2 = document.createElement('h2');
     h2.textContent = 'Welcome to Porkie Bun! 🐷';

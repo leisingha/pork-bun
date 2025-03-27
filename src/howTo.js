@@ -1,13 +1,29 @@
-import imgImport from "./porkcook.jpeg";
+import imgImport from "./dumpling-making.svg";
+
+function removeInverted(){
+    const btnList = document.querySelectorAll('ul button')
+    btnList.forEach((button) =>{
+        button.classList.remove('inverted');
+    })
+}
+
+function addInverted(btn){
+    btn.classList.add('inverted');
+}
 
 export const populateHowToContent = function (){
+    removeInverted();
+
+    const howToBtn = document.querySelector('.btn-how-to');
+    addInverted(howToBtn);
+
     const content = document.querySelector('#content');
     const sectionIntro = document.createElement('section');
     sectionIntro.classList.add('intro');
     const sectionMiddle = document.createElement('section');
-    sectionIntro.classList.add('middle');
+    sectionMiddle.classList.add('middle');
     const sectionEnding = document.createElement('section');
-    sectionIntro.classList.add('ending');
+    sectionEnding.classList.add('ending');
 
     const h2 = document.createElement('h2');
     h2.textContent = 'Lets make some pork buns 🧑‍🍳';
@@ -18,6 +34,7 @@ export const populateHowToContent = function (){
 
     const img = document.createElement('img');
     img.src = imgImport;
+    img.classList.add('cooking-img')
     sectionMiddle.appendChild(img);
 
     const list = document.createElement('ol');
@@ -32,7 +49,6 @@ export const populateHowToContent = function (){
     list.appendChild(item2);
     list.appendChild(item3);
 
-    div.appendChild(list);
     sectionMiddle.appendChild(list);
 
     const pEnding = document.createElement('p');
