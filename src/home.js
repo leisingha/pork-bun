@@ -31,8 +31,12 @@ function populateHomeContent(){
     pEnding.textContent = `So grab a napkin (you'll need it), and let's dive into the world of pork buns! 🥟✨`
     sectionEnding.appendChild(pEnding);
 
+    const button = document.createElement('button');
+    button.textContent = `Start Exploring`
+
     content.appendChild(sectionIntro);
     content.appendChild(sectionMiddle);
     content.appendChild(sectionEnding);
+    content.appendChild(button);
     
 }
