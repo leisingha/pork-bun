@@ -3,3 +3,70 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    /* Add your background pattern here */
+    background-color: #ffffff;
+    background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+    font-size: 1.5rem;
+  
+}
+
+header{
+    grid-column: 1/4;
+    align-items: center;
+    display: grid;
+    align-items: center;
+    font-size: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header button{
+    height: 3rem;
+    width: 5rem;
+    border-radius: 10px;
+    border-style: dotted;
+}
+
+li.logo{
+    margin-right: auto;
+}
+
+div#content{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.home-img{
+    max-width: max-content;
+}
+
+section.middle{
+    display: flex;
+    align-items: center;
+}
+
+#content button{
+    height: 4rem;
+    width: 8rem;
+    border-radius: 10px;
+    border-style: dotted;
+    font-weight: bold;
+    font-size: 1.15rem;
+}

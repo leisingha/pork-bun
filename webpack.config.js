@@ -13,7 +13,7 @@ module.exports = {
     },
     devtool: "eval-source-map",
     devServer: {
-    watchFiles: ["./src/template.html"],
+    watchFiles: ["./src/index.html"],
   },
     plugins: [
         new HtmlWebpackPlugin({
