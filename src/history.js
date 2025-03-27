@@ -1,6 +1,6 @@
-import imgImport from "./jokebear-monch.gif";
+import imgImport from "./bao-white.jpg";
 
-export const populateHomeContent = function(){
+export const populateHistory = function(){
     const content = document.querySelector('#content');
     const sectionIntro = document.createElement('section');
     sectionIntro.classList.add('intro');
@@ -10,33 +10,27 @@ export const populateHomeContent = function(){
     sectionIntro.classList.add('ending');
 
     const h2 = document.createElement('h2');
-    h2.textContent = 'Welcome to Porkie Bun! 🐷';
+    h2.textContent = 'The History of Pork Buns 🧑‍🏫';
     const pIntro = document.createElement('p');
-    pIntro.textContent = `Are you ready to embark on a delicious journey filled with fluffy buns and savory surprises? \n Whether you're here to learn, laugh, or just drool over pictures of pork buns, you're in the right place!`
+    pIntro.textContent = `Pork buns, or "baozi," have been a beloved staple of Chinese cuisine for centuries. \n Originating during the Three Kingdoms period, they were created as a portable meal for travelers and soldiers.`
     sectionIntro.appendChild(h2);
     sectionIntro.appendChild(pIntro);
 
-    
     const img = document.createElement('img');
     img.src = imgImport;
     sectionMiddle.appendChild(img);
     const div = document.createElement('div');
     div.classList.add('fact-box');
     const pMiddle = document.createElement('p');
-    pMiddle.textContent = `Fun fact: Did you know pork buns are scientifically proven* to make your day 100% better? \n (*Okay, maybe not scientifically, but trust us, they're magical.)`
+    pMiddle.textContent = `Fun fact: The name "baozi" translates to "wrapped treasure," symbolizing the delicious filling hidden inside the soft, fluffy dough.`
     div.appendChild(pMiddle);
     sectionMiddle.appendChild(div);
 
     const pEnding = document.createElement('p')
-    pEnding.textContent = `So grab a napkin (you'll need it), and let's dive into the world of pork buns! 🥟✨`
+    pEnding.textContent = `From street food stalls to gourmet restaurants, pork buns have captured the hearts of food lovers worldwide. \n Let's explore their rich history and cultural significance! 🥟✨`
     sectionEnding.appendChild(pEnding);
-
-    const button = document.createElement('button');
-    button.textContent = `Start Exploring`
 
     content.appendChild(sectionIntro);
     content.appendChild(sectionMiddle);
     content.appendChild(sectionEnding);
-    content.appendChild(button);
-    
 }

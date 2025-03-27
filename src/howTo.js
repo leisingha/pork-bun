@@ -1,6 +1,6 @@
 import imgImport from "./porkcook.jpeg";
 
-function populateHowToContent(){
+export const populateHowToContent = function (){
     const content = document.querySelector('#content');
     const sectionIntro = document.createElement('section');
     sectionIntro.classList.add('intro');
